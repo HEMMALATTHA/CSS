@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css3</title>
+    <style>
+        @keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px); 
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    opacity: 0; /* Start invisible */
+    animation: fadeIn 1.5s ease-out forwards;
+}
+
+    </style>
+</head>
+<body>
+    <h1 class="fade-in">Welcome to My Website</h1>
+    <p class="fade-in">This text fades in smoothly when the page loads.</p>
+</body>
+</html>

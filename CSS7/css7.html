@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css7</title>
+    <style>
+        
+        * {
+            font-family: cursive;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap; 
+            padding: 20px;
+            justify-content:space-around; 
+        }
+
+        .column {
+            background-color: white;
+            padding: 20px;
+             width: 250px; 
+            height: 250px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+    
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column; 
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="column">
+            <h2>HEMA</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores aliquam, nobis magnam corrupti dolorem enim beatae corporis ipsa placeat inventore quae quo debitis facilis laboriosam fugiat? Officia amet nulla fugiat.</p>
+        </div>
+        <div class="column">
+            <h2>SRI</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur, neque veniam! Inventore ab est facilis saepe odio, deserunt repudiandae quisquam cupiditate? Harum facere ducimus hic architecto possimus ut earum pariatur.</p>
+        </div>
+        <div class="column">
+            <h2>KRISH</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate quae officiis aliquid quaerat odit doloribus, voluptatum nesciunt reiciendis nam in quidem facilis beatae quibusdam, debitis tenetur ad laborum voluptatibus maxime.</p>
+        </div>
+    </div>
+
+</body>
+</html>
