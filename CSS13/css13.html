@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css13</title>
+    <style>
+        .container {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 20px; 
+          padding: 20px;
+}
+
+      .column {
+         background-color: aquamarine;
+        padding: 20px;
+        text-align: center;
+        border: 1px solid aqua;
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr; 
+  }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="column">Column 1</div>
+        <div class="column">Column 2</div>
+      </div>
+      
+</body>
+</html>

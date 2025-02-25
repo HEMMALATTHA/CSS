@@ -1,0 +1,63 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>CSS14</title> 
+  <style> 
+    .container { 
+      width: 300px; 
+      height: 150px; 
+      border: 2px solid #333; 
+      padding: 10px; 
+    } 
+ 
+    .overflow-visible { 
+      overflow: visible; 
+    } 
+ 
+    .overflow-hidden { 
+      overflow: hidden; 
+    } 
+ 
+ .overflow-scroll { 
+   overflow: scroll; 
+ } 
+
+ .overflow-auto { 
+   overflow: auto; 
+ } 
+
+ .content { 
+   width: 500px; /* Larger than the container to demonstrate overflow */ 
+   height: 200px; 
+   background: lightblue; 
+ } 
+</style> 
+</head> 
+<body> 
+
+<h1>CSS Overflow Examples</h1> 
+
+<div class="container overflow-visible"> 
+ <div class="content">Visible Overflow</div> 
+</div> 
+
+
+<div class="container overflow-hidden"> 
+ <div class="content">Hidden Overflow</div> 
+</div> 
+
+
+<div class="container overflow-scroll"> 
+ <div class="content">Scroll Overflow</div> 
+</div> 
+
+
+<div class="container overflow-auto"> 
+ <div class="content">Auto Overflow</div> 
+</div> 
+
+</body> 
+</html> 
+
